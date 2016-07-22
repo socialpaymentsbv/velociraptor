@@ -29,4 +29,6 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 
-config :velociraptor, api_key: System.get_env("DOCRAPTOR_API_KEY")
+config :velociraptor,
+  api_key: System.get_env("DOCRAPTOR_API_KEY"),
+  test: true
