@@ -1,0 +1,45 @@
+[
+  {
+    "request": {
+      "body": "{\"test\":false,\"name\":\"test.pdf\",\"document_url\":\"malformed://address\",\"document_type\":\"pdf\"}",
+      "headers": {
+        "Authorization": "Basic aU40Tm9VTVoxTnJoaDN4UXBIME06"
+      },
+      "method": "post",
+      "options": {
+        "httpc_options": {
+          "body_format": "binary"
+        },
+        "http_options": {
+          "timeout": "3000",
+          "connect_timeout": "30000"
+        }
+      },
+      "request_body": "",
+      "url": "https://docraptor.com/docs"
+    },
+    "response": {
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<errors>\n  <error>Invalid document content url supplied.</error>\n</errors>\n",
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "date": "Fri, 22 Jul 2016 07:23:18 GMT",
+        "server": "nginx",
+        "content-length": "114",
+        "content-type": "application/xml; charset=utf-8",
+        "set-cookie": "_doc_raptor_session=alJLd2xtNlgzSG9hV3dKNjZhZE5kQ3ptYWkraTRYL3VhWlA0bmZvVktZbW92Z2FaQTBDNlY0VTM5ZUVHN1VzS2IrK1ltNE5QNHBqVldaMDR5RVdvZDRWYnlmVnNxNnF1OUNrSFpGbDUwSkRYTGZzNjJSZEVySUVGSVBQTWNNZzRQREJpckdtWmFwa0J5dWpBK3cvRU1GVFhIVFpOV3VXdnhmbHV2djU0ZDF3bUlGWFpZdE5HR3Fma2E2cG93aEM0WXhxQlJkV1lNOU93aHFJb3A2dkt1U2RHL0hkZ0l5blNOKzYwaGpxbEJRRzBBY0NPTUtOV0RwQ3NWNlJvNHh2NGFpR1Nia1dnU0xUNG1lMVFuVS9vOFJQWDU2OVNveFRVWXFIeEtFbnFhdjhDWkF0N2JjYWdpTHgrdDNoTXBtT2ktLXFJb2dsSHJxNmQybkY4Y1B4WXBNNVE9PQ%3D%3D--fe5de145aae4f656ba31fb46f0b54e7d8e2fed46; path=/; HttpOnly",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-request-id": "b82c540c-3155-4b07-a599-cf9a57d5325f",
+        "x-runtime": "0.634514",
+        "x-xss-protection": "1; mode=block"
+      },
+      "status_code": [
+        "HTTP/1.1",
+        422,
+        "Unprocessable Entity"
+      ],
+      "type": "ok"
+    }
+  }
+]
