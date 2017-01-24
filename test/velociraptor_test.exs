@@ -2,6 +2,11 @@ defmodule VelociraptorTest do
   use ExUnit.Case, async: true
   use ExVCR.Mock, adapter: ExVCR.Adapter.Httpc
 
+  setup do
+    ExVCR.Config.filter_sensitive_data("Basic .*", "Basic [FILTERED]")
+    :ok
+  end
+
   test "generates a PDF from a provided HTML string" do
     use_cassette "generate_pdf_from_string" do
       client = Velociraptor.new

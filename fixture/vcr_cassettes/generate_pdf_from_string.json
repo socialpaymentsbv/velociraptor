@@ -3,7 +3,7 @@
     "request": {
       "body": "{\"test\":false,\"name\":\"test.pdf\",\"document_type\":\"pdf\",\"document_content\":\"<html><body>Hello</body></html>\"}",
       "headers": {
-        "Authorization": "Basic aU40Tm9VTVoxTnJoaDN4UXBIME06"
+        "Authorization": "Basic [FILTERED]"
       },
       "method": "post",
       "options": {

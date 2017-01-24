@@ -3,7 +3,7 @@
     "request": {
       "body": "{\"test\":false,\"name\":\"test.pdf\",\"document_url\":\"https://google.com\",\"document_type\":\"pdf\"}",
       "headers": {
-        "Authorization": "Basic aU40Tm9VTVoxTnJoaDN4UXBIME06"
+        "Authorization": "Basic [FILTERED]"
       },
       "method": "post",
       "options": {
